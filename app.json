@@ -17,6 +17,12 @@
       ]
     ],
     "name": "AbsolutePosTest",
-    "slug": "AbsolutePosTest"
+    "slug": "AbsolutePosTest",
+    "android": {
+      "package": "com.douglowderexpo.AbsolutePosTest"
+    },
+    "ios": {
+      "bundleIdentifier": "com.douglowderexpo.AbsolutePosTest"
+    }
   }
 }
