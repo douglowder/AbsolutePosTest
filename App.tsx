@@ -189,8 +189,6 @@ const GuideScreen = () => {
     >
       <View
         style={{
-          width: px(600),
-          height: px(400),
           borderWidth: 1,
           borderColor: 'rgba(255,255,255,1)',
         }}
@@ -252,10 +250,9 @@ const ChannelRow = ({
     <Animated.View
       style={[
         {
-          position: 'absolute',
-          top: index * (CHANNEL_HEIGHT + CHANNEL_SPACING),
-          left: 0,
+          flexDirection: 'row',
           height: CHANNEL_HEIGHT,
+          margin: 5,
         },
         style,
         visibleStyle,
@@ -308,8 +305,6 @@ const ProgramCell = ({ start, end, title, onFocus, channelIndex }) => {
   return (
     <View
       style={{
-        position: 'absolute',
-        left: ((start - startTime) / 1000 / 60) * MINUTE_WIDTH,
         width: ((end - start) / 1000 / 60) * MINUTE_WIDTH,
         paddingHorizontal: CHANNEL_SPACING / 2,
         height: CHANNEL_HEIGHT,
